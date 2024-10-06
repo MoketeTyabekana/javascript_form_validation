@@ -83,3 +83,10 @@ input,button{
     border:none;
     border-radius: 5px;
 }
+
+@media screen and (max-width:720px) {
+    .container{
+        width: 100%;
+        margin: 5%;
+    }
+}
