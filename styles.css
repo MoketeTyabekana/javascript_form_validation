@@ -82,13 +82,23 @@ button:focus,input:focus{
 input,button{
     border:none;
     border-radius: 5px;
+   
+}
+
+.input_control input {
+    border-color: #ff3860;
+} 
+
+.input_control .error {
+    color: #ff3860;
+    font-size: 10px;
+    margin: 5px;
 }
 
 @media screen and (max-width:720px) {
     .container{
         width: 100%;
         margin: 5%;
-        transition: ease-in-out 0.3s;
-       
+        transition: ease-in-out 0.3s; 
     }
 }
