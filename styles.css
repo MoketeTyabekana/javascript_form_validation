@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: rgb(34, 193, 195);
   background: linear-gradient(
     0deg,
@@ -75,8 +76,7 @@ button:hover{
 }
 
 button:focus,input:focus{
-    
-    outline: none;
+    outline: 0;
 }
 
 input,button{
@@ -85,20 +85,24 @@ input,button{
    
 }
 
-.input_control input {
+.input_control.error input {
+    border: solid;
     border-color: #ff3860;
 } 
 
 .input_control .error {
     color: #ff3860;
-    font-size: 10px;
+    font-size: 12px;
     margin: 5px;
 }
 
 @media screen and (max-width:720px) {
     .container{
         width: 100%;
-        margin: 5%;
         transition: ease-in-out 0.3s; 
+    }
+
+    body{
+      padding: 5%;
     }
 }
